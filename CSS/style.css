@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+/* styling the container */
+.container {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 100px 10px;
+    padding: 20px 50px;
+}
+
+@media (max-width:375px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+/* styling form */
+
+form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: relative;
+    padding: 50px 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+@media (max-width:375px) {
+    form div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+}
+
+form div label {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 6px;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+form div input {
+    padding: 15px;
+    border: 1px solid gray;
+    width: 130px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (max-width:375px) {
+    form div input {
+        width: 80px;
+        font-size: 22px;
+    }
+}
+
+form button {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    background: purple;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width:375px) {
+    form button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* styling result div */
+/* styling the divs in the result div  */
+.The-result {
+    width: 100%;
+    height: 280px;
+    font-weight: bold;
+    margin-top: 35px;
+    padding-bottom: 20px;
+    display: grid;
+}
+
+@media (max-width:375px) {
+    .The-result {
+        margin-top: 50px;
+    }
+}
+
+.The-result div:nth-child(1) {
+    order: 3;
+}
+
+.The-result div:nth-child(2) {
+    order: 2;
+}
+
+.The-result div:nth-child(3) {
+    order: 1;
+}
+
+.The-result div {
+    font-size: 90px;
+}
+
+@media (max-width:375px) {
+    .The-result div {
+        font-size: 50px;
+    }
+}
+
+
+.The-result span {
+    font-size: 90px;
+    font-weight: bold;
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 15px;
+}
+
+@media (max-width:375px) {
+    .The-result span {
+        font-size: 50px;
+    }
+}
+
+/* styling attribution */
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 20px !important;
+    transform: translateX(-50%);
+}
+
+/* for custom classes i used it in js file */
+
+.red {
+    color: red;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
